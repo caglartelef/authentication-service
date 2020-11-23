@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: authentication-service
+
+server:
+  port: 9090
+
+keycloak:
+  realm: dev
+  client-id: client-id
+  username: username
+  password: password
+  client-secret: client-secret
+  auth-server-url: http://localhost:8080/auth
+
+logging:
+  level:
+    com.caglartelef.authenticationservice: debug
